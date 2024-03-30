@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sampleflask-service
+  name: sampleflask-service
+spec:
+  ports:
+  - name: http
+    port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: sampleflaskapp
+  type: LoadBalancer
+status:
+  loadBalancer: {}

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: simpleflaskapp
+  name: simpleflaskapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simpleflaskapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simpleflaskapp
+    spec:
+      containers:
+      - image: sreejith92/sample-python-project
+        name: sample-python-project
+        ports:
+        - containerPort: 5000
