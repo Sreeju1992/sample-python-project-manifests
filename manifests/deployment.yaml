@@ -5,6 +5,7 @@ metadata:
   labels:
     app: simpleflaskapp
   name: simpleflaskapp
+  namespace: pythonapp
 spec:
   replicas: 1
   selector:
