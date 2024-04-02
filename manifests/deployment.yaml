@@ -18,7 +18,7 @@ spec:
         app: simpleflaskapp
     spec:
       containers:
-      - image: sreejith92/sample-python-project:7-4fa4dd90579070d2821f6e0793ae1e8cd3c1087d
+      - image: sreejith92/sample-python-project:1-36e5e4fbdfe5ecb05744755bcbc98e8a8cde30f0
         name: sample-python-project
         ports:
         - containerPort: 5000
